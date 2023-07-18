@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'EB Garamond', serif;
+overflow-x: hidden;
+}
+
+.wrapper{
+width: 100vw;
+height: 100vh;
+background-color: #D1958F80;
+color: #401312;
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+padding: 2em;
+}
+
+.brand{
+margin-top: -7px;
+}
+
+.brand span{
+color:#86514C;
+}
+
+.menu{
+display: flex;
+width: 50%;
+justify-content: space-around;
+}
+
+.menu li{
+list-style: none;
+}
+
+.menu a{
+color:#342D25;
+text-decoration: none;
+padding: 10px 20px;
+}
+
+.menu .active{
+color: #86514C;
+}
+
+.menu a:hover{
+background-color: #AB726D;
+color: #fff;
+transition: ease-in .3s;
+}
+
+.toggle-menu,
+.info-content .sotial-network{
+display: none;
+}
+
+.main{
+margin: 0 auto;
+width: 80vw;
+height: 80vh;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+}
+
+h1{
+font-size: clamp(4vw, 1.5em, 3em);
+
+}
+
+span{
+color: #86514C;
+}
+
+.download-cv{
+padding: 10px 20px;
+background-color:  #915A5680;
+color: #411412;
+border: none;
+border-radius: 20px;
+margin-top: 10px;
+cursor: pointer;
+box-shadow: 1px 3px 11px -5px #342D2570;
+text-decoration: none;
+}
+
+.project-details-button{
+padding: 10px 20px;
+background-color:  #915A5680;
+color: #411412;
+border: none;
+border-radius: 20px;
+margin-top: 10px;
+cursor: pointer;
+box-shadow: 1px 3px 11px -5px #342D2570;
+text-decoration: none;
+}
+
+
+.download-cv:hover {
+background-color: #BFA5A380;
+box-shadow: none;
+}
+
+.project-details-button:hover{
+background-color: #BFA5A380;
+box-shadow: none;
+}
+
+.project-details-button a{
+text-decoration: none;
+color: #411412;
+}
+
+.main img{
+width: 350px;
+border: thick solid #86514C;
+height: 448.13px;
+}
+
+.about{
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+width: 100vw;
+align-items: center;
+background-color: #FFE8E150;
+}
+
+.about img{
+max-width: 100%;
+grid-column: 1/5;
+}
+
+.about-info{
+grid-column: 5/10;
+padding: 3em;
+}
+
+.about-info h2{
+font-size: 2em;
+color: #D1958F;
+}
+
+.divider{
+height: 4px;
+width: 60px;
+background-color: #63312E;
+margin-top: 6px;
+margin-bottom: 2em;
+border-radius: 3px;
+}
+
+.about p{
+margin-bottom: 1em;
+}
+
+.portfolio{
+width: 100vw;
+background-color: #D1958F80;
+color: #401312;
+}
+
+
+.portfolio-headings{
+width: 100vw;
+padding: 5em;
+}
+
+.portfolio-headings h2{
+font-size: 2.5em;
+}
+
+.portfolio .container{
+width: 80vw;
+padding-bottom: 3em;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.card{
+width: 300px;
+height: 400px;
+background-color: #FFE8E190;
+margin: 1em;
+}
+
+.card-img{
+width: 100%;
+height: 150px;
+background-image: url(img/istockphoto-1284549946-612x612.jpg);
+background-size: cover;
+}
+
+.card-img-1{
+width: 100%;
+height: 150px;
+background-image: url(img/iStock-1327568875-1.jpg);
+background-size: cover;
+}
+
+.card-img-2{
+width: 100%;
+height: 150px;
+background-image: url(img/future+\(16\).png);
+background-size: cover;
+}
+
+.card-title{
+padding: 20px;
+}
+
+.card-projects-links{
+display: flex;
+justify-content: space-evenly;
+}
+
+.card-projects-links a{
+color: #401312;
+text-decoration: none;
+}
+
+.card-projects-links i{
+font-size: 1.5em;
+}
+
+.card .project-details{
+margin: 0 auto;
+margin: 1em;
+width: 60%;
+}
+
+.card .project-details a{
+text-decoration: none;
+color: #411412;
+}
+
+.project-details-content{
+display: flex;
+width: 100%;
+justify-content: center;
+margin-top: 1em;
+}
+
+.contact-section{
+width: 100vw;
+margin: 0 auto;
+padding: 3em;
+background-color: #FFE8E150;
+}
+
+.contact-form h4{
+font-size: 1.5em;
+color: #411412;
+margin-left: 3em;
+}
+
+.contact-headings h2{
+font-size: 2.5em;
+color: #D1958F;
+}
+
+.container-contact{
+padding: 3em;
+margin: 0 auto;
+display: flex;
+align-items: center;
+}
+
+.container-contact img{
+width: 400px;
+height: auto;
+opacity: 50%;
+}
+
+.form{
+display: flex;
+flex-direction: column;
+width: 30vw;
+margin: 4em;
+margin-top: 2em;
+}
+
+.form input{
+padding: 10px 20px;
+margin-bottom: 1em;
+background: none;
+border: none;
+border-bottom: 1px solid #411412;
+color: #411412;
+}
+
+.form textarea{
+height: 150px;
+background: none;
+padding: 1.5em;
+color: #411412;
+border: 1px solid #411412;
+resize: none;
+}
+
+.btn-submit{
+padding: 10px 20px;
+margin: 1em;
+border: none;
+text-transform: uppercase;
+background-color: #915A5680;
+color: #411412;
+border-radius: 20px;
+cursor: pointer;
+box-shadow: 1px 3px 11px -5px #342D2570
+}
+
+.btn-submit:hover{
+background-color: #BFA5A380;
+box-shadow: none;
+}
+
+.footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 200px;
+background-color: #D1958F80;
+}
+
+.footer-content h2{
+font-size: 3em;
+color: #411412;
+}
+
+.footer-content h5{
+font-size: 1.5em;
+color: #411412;
+text-align: center;
+}
+
+.sotial-network{
+display: flex;
+justify-content: space-evenly;
+width: 300px;
+margin-top: 1em;
+}
+
+.sotial-network i{
+font-size: 1.5em;
+color: #411412
+}
+
+.footer h2{
+font-size: clamp(4vw, 1.5em, 3em);
+}
+
+.footer h5{
+font-size: clamp(2vw, 1em, 2em);
+}
+
+.footer a{
+font-size: clamp(2vw, 1em, 2em);
+}
+
+@media screen and (max-width: 800px){
+
+.menu{
+flex-direction: column;
+justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+height: 100vh;
+background-color: #915A5680;
+z-index: 1;
+transform: translateX(-110%);
+transition: all 0.5s ease-in-out;
+}
+
+.show-menu{
+transform: translateX(0%);
+transition: all 0.5s ease-in-out;
+}
+
+.menu li{
+margin: 2em;
+}
+
+.toggle-menu{
+display: block;
+}
+
+.bars{
+font-size: 1.5em;
+margin-top: -.2em;
+}
+
+.toggle-menu .close{
+font-size: 1.5em;
+margin-top: -.2em;
+display: none;
+}
+
+.main,
+.about{
+display: flex;
+flex-direction: column-reverse;
+}
+
+.info-content{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.main img{
+width: min(70%, 350px);
+height: auto;
+}
+
+.info-content .sotial-network{
+display: block;
+}
+
+.info-content .sotial-network{
+display: flex;
+justify-content: space-evenly;
+}
+
+.download-cv,
+.contact-section-img{
+display: none;
+}
+
+.info-content-p{
+text-align: center;
+}
+
+.form{
+width: 80%;
+}
+
+}
